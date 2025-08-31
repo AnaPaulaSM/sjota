@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJOTA - Automação Personalizada</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="./images/favicon-sj.png">
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <div class="content">
+    <!-- Header -->
+    <header>
+      <img src="./images/logo-sj.png" alt="SJOTA" class="logo">
+    </header>
+
+    <!-- Menu -->
+    <nav>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#portfolio">Nosso Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos">
+      <h2>Quem Somos</h2>
+      <p>
+        A <strong>SJOTA</strong> nasceu na Ilha da Magia com o objetivo de transformar processos manuais em soluções ágeis e personalizadas.  
+        Somos apaixonados em transformar tarefas repetitivas em qualidade de vida.
+        Nossa missão é simplificar rotinas por meio de tecnologias inovadoras que permitem automações sob medida.  
+        Com uma equipe multidisciplinar e foco total no cliente, ajudamos empresas a economizar tempo, reduzir erros e aumentar a eficiência e produtividade, alcançando a excelência e maior rentabilidade.
+      </p>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+      <h2>Nosso Portfólio</h2>
+      <div class="carousel">
+        <div class="carousel-images" id="carousel-images">
+          <img src="./images/fluxo-1.avif" alt="Fluxo 1">
+          <img src="./images/fluxo-2.jpg" alt="Fluxo 2">
+          <img src="./images/fluxo-3.jpg" alt="Fluxo 3">
+          <img src="./images/fluxo-4.jpg" alt="Fluxo 4">
+          <img src="./images/fluxo-5.jpg" alt="Fluxo 5">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide()">&#10094;</button>
+          <button onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+      <div class="descricao" id="descricao">
+        Fluxo 1: Automação de relatórios financeiros
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p style="text-align: center;">Entre em contato com nossos consultores:</p>
+      <div class="contato-icons">
+        <a href="https://wa.me/5548991431521" target="_blank"><i class="fa-brands fa-whatsapp">
+          <p>Ana</p>
+      </i></a>
+        <a href="https://wa.me/5548984096109" target="_blank"><i class="fa-brands fa-whatsapp">
+          <p>Tiago</p>
+      </i></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 SJOTA - Florianópolis</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
