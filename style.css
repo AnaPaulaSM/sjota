@@ -5,19 +5,20 @@
   box-sizing: border-box;
 }
 
+/* Header e Logo */
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 8px; /* diminua se quiser menos espaço */
-  padding-top: 8px;    /* diminua se quiser menos espaço */
+  padding: 4px 0; /* espaço reduzido em cima/baixo do logo */
 }
 
 .logo {
-  width: 320px;
-  max-width: 90vw;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
-  margin-bottom: 0; /* remove qualquer margem extra */
+  width: 280px;               /* tamanho levemente menor (antes 320px) */
+  max-width: 80vw;
+  display: block;             /* elimina espaçamento inline */
+  margin: 0;                  /* sem margem extra */
+  filter: drop-shadow(0 3px 8px rgba(0,0,0,0.35));
 }
 
 /* Background Floripa na página toda */
@@ -25,7 +26,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  /*background: url('./images/bckg-6.jpg') no-repeat center center fixed;*/
   background-size: cover;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ body::before {
   height: 100vh;
   background: url('./images/bckg-6.jpg') no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.5; /* ajuste a opacidade aqui */
+  opacity: 0.4; 
   z-index: -1;
   pointer-events: none;
 }
@@ -58,23 +58,7 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  opacity: 0.7;
-}
-
-/* Remova o overlay e background do antigo .hero */
-.hero, .hero .overlay {
-  background: none !important;
-  box-shadow: none !important;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.logo {
-  width: 320px;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+  opacity: 0.6;
 }
 
 /* Menu */
@@ -181,12 +165,12 @@ p {
   color: #0d4e86;
   transform: scale(1.15);
 }
-
 .contato-icons p {
-    margin-top: 15px;
-    font-size: 0.7rem;
-    color: #555;
+  margin-top: 15px;
+  font-size: 0.7rem;
+  color: #555;
 }
+
 /* Footer */
 footer {
   background-color: #146bb8;
@@ -196,13 +180,13 @@ footer {
   margin-top: 40px;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .logo {
-    width: 220px;
+    width: 200px; /* menor ainda no mobile */
   }
   nav a {
     padding: 12px 15px;
